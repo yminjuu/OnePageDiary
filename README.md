@@ -1,3 +1,17 @@
+# React를 사용한 일기장 만들기
+
+이 프로젝트는 Node.js 환경에서 React를 사용하여 간단한 일기장을 만드는 것을 목표로 합니다.
+Create-React-App 패키지를 사용했습니다.
+
+## 개요
+
+이 프로젝트는 사용자가 일기를 작성하고 저장할 수 있는 간단한 웹 애플리케이션입니다. 
+React를 기반으로 작성되었으며, 사용자가 새로운 일기를 작성 및 삭제, 수정하고 이전에 작성한 일기를 조회할 수 있습니다.
+
+## 개발 환경
+- Node.js v20.11.0
+- React
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
