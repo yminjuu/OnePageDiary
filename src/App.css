@@ -1,5 +1,5 @@
 .DiaryEditor {
-  border: 1px solid gray;
+  border-bottom: 1px solid gray;
   text-align: center;
   padding: 20px;
 
@@ -26,4 +26,41 @@ textarea {
   width: 500px;
   padding: 10px;
   cursor: pointer;
+}
+
+/* List */
+.DiaryList {
+  border: 2px solid lightblue;
+  padding: 20px;
+  margin: 30px;
+}
+
+.DiaryList h2 {
+  text-align: center;
+}
+
+.DiaryList h3 {
+  color: gray;
+  font-size: 15px;
+}
+
+.DiaryItem {
+  background-color: aliceblue;
+  padding: 30px;
+  margin: 10px;
+}
+
+#deleteBtn {
+  display: grid;
+  position: relative()
+}
+
+#wrote_date {
+  color: gray;
+}
+
+#content {
+  font-weight: bold;
+  margin-top: 10px;
+  padding-top: 10px;
 }
