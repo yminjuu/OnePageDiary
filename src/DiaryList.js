@@ -11,7 +11,7 @@ const DiaryList = ({ onEdit, onRemove, diaryList }) => {
             <div>
                 {diaryList.map((it) => (
                     <DiaryItem onEdit={onEdit} onRemove={onRemove} key={it.id} {...it}></DiaryItem>
-                    //spread 연산자를 통해서 현재 접근하고 있는 객체의 모든 데이터가 전달된다. 
+                    //spread 연산자를 통해서 현재 접근하고 있는 객체의 모든 프로퍼티가 전달된다. 
                 ))
                 }
             </div>
