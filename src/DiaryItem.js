@@ -1,14 +1,20 @@
-import { useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 const DiaryItem = ({ 
+
+    //새로 작성된 일기 객체의 모든 프로퍼티
     author, 
     content, 
     created_date, 
     emotion, 
     id, 
+
+    //App 함수에 선언되어 있는 Remove 함수와 Edit 함수
     onRemove,
     onEdit, }) => {
-    
+
+    useEffect(()=>{console.log("Diaryitem Rerender")});
+
     const contentRef= useRef(); //focus를 주기 위해 Ref를 가져옴
 
     const [state, setState] = useState(content); //작성 내용 state
@@ -71,4 +77,4 @@ const DiaryItem = ({
     </div >
 };
 
-export default DiaryItem;
+export default React.memo(DiaryItem);
