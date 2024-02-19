@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {useState, useRef, useContext } from "react";
+import { DiaryDispatchContext } from "./App";
 
 const DiaryItem = ({ 
 
@@ -8,12 +9,9 @@ const DiaryItem = ({
     created_date, 
     emotion, 
     id, 
+}) => {
 
-    //App 함수에 선언되어 있는 Remove 함수와 Edit 함수
-    onRemove,
-    onEdit, }) => {
-
-    useEffect(()=>{console.log("Diaryitem Rerender")});
+    const {onEdit, onRemove} = useContext(DiaryDispatchContext);
 
     const contentRef= useRef(); //focus를 주기 위해 Ref를 가져옴
 

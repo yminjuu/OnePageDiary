@@ -1,8 +1,16 @@
+import { DiaryDispatchContext, DiaryStateContext } from "./App";
+//context를 import
+
 import DiaryItem from "./DiaryItem";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 
-const DiaryList = ({ onEdit, onRemove, diaryList }) => {
+const DiaryList = () => {
 
+    const {onEdit, onRemove} = useContext(DiaryDispatchContext);
+
+    //문맥으로부터 데이터를 받아옴
+    const diaryList = useContext(DiaryStateContext); 
+    //인자: 어느 문맥에서 데이터를 꺼내올 것인가?
 
     return (
         <div className="DiaryList">
