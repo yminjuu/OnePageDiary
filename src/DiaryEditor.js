@@ -1,6 +1,10 @@
-import React,{ useEffect, useRef, useState } from 'react';
+import React,{ useContext, useEffect, useRef, useState } from 'react';
+import { DiaryDispatchContext } from './App';
 
-const DiaryEditor = ({ onCreate }) => {
+const DiaryEditor = () => {
+
+    //context로부터 데이터를 받아옴: 비구조화 할당 사용
+    const {onCreate}= useContext(DiaryDispatchContext); 
 
     useEffect(()=>{console.log("DiaryEditor Rerender")});
 
